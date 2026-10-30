@@ -1,18 +1,7 @@
 #ifndef EXOPLANET_H
 #define EXOPLANET_H
 
-typedef struct {
-    char *name;
-    char *system;
-    int year;
-    char *facility;
-    double radius;
-    double mass;
-    int temperature;
-    double habitability;
-
-
-} Exoplanet;
+typedef struct ExoplanetStruct Exoplanet;
 
 Exoplanet *exoplanet_parse(const char *str);
 
