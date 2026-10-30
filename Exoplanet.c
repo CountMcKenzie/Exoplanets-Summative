@@ -86,7 +86,7 @@ void exoplanet_free(Exoplanet *planet) {
 
 const char* exoplanet_toString(const Exoplanet *planet) {
     static char toStringBuffer[450];
-    snprintf(toStringBuffer, sizeof(toStringBuffer), "\"%s\", \"%s\", \"%s\", %d, \"%s\", %f, %f, %d, %f", 
+    snprintf(toStringBuffer, sizeof(toStringBuffer), "\"%s\", \"%s\", \"%s\", %d, \"%s\", %lf, %lf, %d, %lf", 
         planet->name,
         planet->system,
         planet->method,
