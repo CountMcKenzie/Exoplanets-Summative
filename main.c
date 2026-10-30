@@ -40,6 +40,7 @@ History     : 14/10/2026 - v1.00 Initial prototype
 #define EARTH_ESCAPE_VELOCITY (11186)       // Earth escape velocity in m/s
 #define EARTH_TEMPERATURE     (288)         // Earth surface temp. in K
 #define G_CONST               (6.674E-11)   // Gravitational constant
+#define M_PI                  (3.1415926)   // FIXED: PI was not defined, but used later
 
 double computeHabitability(const Exoplanet *planet);
 
@@ -76,7 +77,7 @@ int main(void)
 
    // display most habitable exoplanet
 
-   Iterator mostHabitable = list_end(planets);
+   Iterator mostHabitable = list_begin(planets); // FIXED: incorrect function choice list_end, which returns NULL
 
    printf("\nThe most habitable known exoplanet is:\n\n");
 
@@ -154,7 +155,9 @@ double computeHabitability(const Exoplanet *planet)
 
    // compute Earth Similarity Index
 
-   double ESI_r   = BCSI(r*1e-3, EARTH_RADIUS*1e-3, 057);   // computed in km
+   double ESI_r   = BCSI(r*1e-3, EARTH_RADIUS*1e-3, 0.57);   // computed in km 
+                                                             // FIXED: 0.57 instead of 057. 057 results in
+                                                             // habitability for everything to be 0
    double ESI_rho = BCSI(rho,    EARTH_DENSITY, 1.07);
    double ESI_ve  = BCSI(ve,     1, 0.70);                   // in Earth units
    double ESI_Ts  = BCSI(Ts,     EARTH_TEMPERATURE, 5.58);

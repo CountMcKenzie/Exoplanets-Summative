@@ -1,0 +1,200 @@
+Planet name             : LV426
+System name             : Zeta Reticuli
+Method of discovery     : Deep Space Probe
+Year of discovery       : 2039
+Facility                : Weyland-Yutani Corporation
+Radius (Earth relative) : 0.772
+Mass (Earth relative)   : 0.410
+Equilibrium temperature : 288
+Habitability index      : 0.8776
+
+Planet name             : TRAPPIST-1 e
+System name             : TRAPPIST-1
+Method of discovery     : Transit
+Year of discovery       : 2017
+Facility                : Multiple Observatories
+Radius (Earth relative) : 0.918
+Mass (Earth relative)   : 0.620
+Equilibrium temperature : 251
+Habitability index      : 0.7340
+
+Planet name             : TRAPPIST-1 c
+System name             : TRAPPIST-1
+Method of discovery     : Transit
+Year of discovery       : 2016
+Facility                : La Silla Observatory
+Radius (Earth relative) : 1.056
+Mass (Earth relative)   : 1.380
+Equilibrium temperature : 342
+Habitability index      : 0.7215
+
+Planet name             : K2-18 b
+System name             : K2-18
+Method of discovery     : Transit
+Year of discovery       : 2015
+Facility                : K2
+Radius (Earth relative) : 2.370
+Mass (Earth relative)   : 8.920
+Equilibrium temperature : 284
+Habitability index      : 0.6566
+
+Planet name             : TOI-1266 c
+System name             : TOI-1266
+Method of discovery     : Transit
+Year of discovery       : 2020
+Facility                : Transiting Exoplanet Survey Satellite (TESS)
+Radius (Earth relative) : 1.560
+Mass (Earth relative)   : 2.200
+Equilibrium temperature : 344
+Habitability index      : 0.5910
+
+Planet name             : TRAPPIST-1 f
+System name             : TRAPPIST-1
+Method of discovery     : Transit
+Year of discovery       : 2017
+Facility                : Multiple Observatories
+Radius (Earth relative) : 1.045
+Mass (Earth relative)   : 0.680
+Equilibrium temperature : 219
+Habitability index      : 0.5433
+
+Planet name             : TRAPPIST-1 g
+System name             : TRAPPIST-1
+Method of discovery     : Transit
+Year of discovery       : 2017
+Facility                : Multiple Observatories
+Radius (Earth relative) : 1.127
+Mass (Earth relative)   : 1.340
+Equilibrium temperature : 199
+Habitability index      : 0.5413
+
+Planet name             : LHS 1140 b
+System name             : LHS 1140
+Method of discovery     : Transit
+Year of discovery       : 2017
+Facility                : MEarth Project
+Radius (Earth relative) : 1.727
+Mass (Earth relative)   : 6.980
+Equilibrium temperature : 235
+Habitability index      : 0.5394
+
+Planet name             : TRAPPIST-1 b
+System name             : TRAPPIST-1
+Method of discovery     : Transit
+Year of discovery       : 2016
+Facility                : La Silla Observatory
+Radius (Earth relative) : 1.086
+Mass (Earth relative)   : 0.850
+Equilibrium temperature : 400
+Habitability index      : 0.5218
+
+Planet name             : GJ 414 A b
+System name             : GJ 414 A
+Method of discovery     : Radial Velocity
+Year of discovery       : 2021
+Facility                : W. M. Keck Observatory
+Radius (Earth relative) : 2.630
+Mass (Earth relative)   : 7.600
+Equilibrium temperature : 309
+Habitability index      : 0.5182
+
+Planet name             : LTT 3780 c
+System name             : LTT 3780
+Method of discovery     : Transit
+Year of discovery       : 2020
+Facility                : Transiting Exoplanet Survey Satellite (TESS)
+Radius (Earth relative) : 2.300
+Mass (Earth relative)   : 8.600
+Equilibrium temperature : 353
+Habitability index      : 0.5088
+
+Planet name             : K2-18 b
+System name             : K2-18
+Method of discovery     : Transit
+Year of discovery       : 2015
+Facility                : K2
+Radius (Earth relative) : 2.610
+Mass (Earth relative)   : 8.630
+Equilibrium temperature : 255
+Habitability index      : 0.5013
+
+Planet name             : Kepler-538 b
+System name             : Kepler-538
+Method of discovery     : Transit
+Year of discovery       : 2016
+Facility                : Kepler
+Radius (Earth relative) : 2.215
+Mass (Earth relative)   : 10.600
+Equilibrium temperature : 380
+Habitability index      : 0.4875
+
+Planet name             : K2-18 b
+System name             : K2-18
+Method of discovery     : Transit
+Year of discovery       : 2015
+Facility                : K2
+Radius (Earth relative) : 2.380
+Mass (Earth relative)   : 7.960
+Equilibrium temperature : 235
+Habitability index      : 0.4828
+
+Planet name             : LHS 1140 b
+System name             : LHS 1140
+Method of discovery     : Transit
+Year of discovery       : 2017
+Facility                : MEarth Project
+Radius (Earth relative) : 1.635
+Mass (Earth relative)   : 6.380
+Equilibrium temperature : 379
+Habitability index      : 0.4782
+
+Planet name             : LHS 1140 c
+System name             : LHS 1140
+Method of discovery     : Transit
+Year of discovery       : 2018
+Facility                : Multiple Observatories
+Radius (Earth relative) : 1.282
+Mass (Earth relative)   : 1.810
+Equilibrium temperature : 438
+Habitability index      : 0.4692
+
+Planet name             : LTT 1445 A b
+System name             : LTT 1445 A
+Method of discovery     : Transit
+Year of discovery       : 2019
+Facility                : Transiting Exoplanet Survey Satellite (TESS)
+Radius (Earth relative) : 1.380
+Mass (Earth relative)   : 2.200
+Equilibrium temperature : 433
+Habitability index      : 0.4636
+
+Planet name             : Kepler-20 d
+System name             : Kepler-20
+Method of discovery     : Transit
+Year of discovery       : 2011
+Facility                : Kepler
+Radius (Earth relative) : 2.750
+Mass (Earth relative)   : 20.100
+Equilibrium temperature : 369
+Habitability index      : 0.4626
+
+Planet name             : L 98-59 d
+System name             : L 98-59
+Method of discovery     : Transit
+Year of discovery       : 2019
+Facility                : Transiting Exoplanet Survey Satellite (TESS)
+Radius (Earth relative) : 1.570
+Mass (Earth relative)   : 2.310
+Equilibrium temperature : 409
+Habitability index      : 0.4519
+
+Planet name             : LHS 1140 b
+System name             : LHS 1140
+Method of discovery     : Transit
+Year of discovery       : 2017
+Facility                : MEarth Project
+Radius (Earth relative) : 1.430
+Mass (Earth relative)   : 6.650
+Equilibrium temperature : 230
+Habitability index      : 0.4447
+

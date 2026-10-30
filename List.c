@@ -112,7 +112,7 @@ void list_sort(List *list, Comparator compare)
 
    do
    {
-      sorted = false;
+      sorted = true;
 
       for (Link *link = list->first; link->next != NULL; link=link->next)
       {
@@ -122,7 +122,7 @@ void list_sort(List *list, Comparator compare)
             link->planet       = link->next->planet;
             link->next->planet = planet;
 
-            sorted = true;
+            sorted = false; // FIXED: Sort logic was backwards, with true and false having to be swapped
          }
       }
    }

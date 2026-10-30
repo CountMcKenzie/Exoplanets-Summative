@@ -30,13 +30,13 @@ Exoplanet *exoplanet_parse(const char *str) {
 
     // variables for numeric values
     int year;
-    int radius;
+    double radius;
     double mass;
     int temperature;
     double habitability;
 
     // breaking the line from exoplanets.txt parameter into seprate values
-    sscanf(str, "\"%49[^\"]\", \"%49[^\"]\", \"%49[^\"]\", %d, %49[^,], %f, %f, %d, %f", 
+    int parsedInfoCount = sscanf(str, "\"%49[^\"]\", \"%49[^\"]\", \"%49[^\"]\", %d, \"%49[^\"]\", %lf, %lf, %d, %lf", 
         nameBuffer,
         systemBuffer,
         methodBuffer,
@@ -49,23 +49,27 @@ Exoplanet *exoplanet_parse(const char *str) {
 
     );
 
+    if (parsedInfoCount < 9) {
+        free(planet);
+        return NULL;
+    }
     // when assigning strings to new planet: allocating space needed with malloc using
     //                                       sizeof so null terminators included
 
-    planet->name = malloc(sizeof(nameBuffer));
+    planet->name = malloc(strlen(nameBuffer)+1);
     strcpy(planet->name, nameBuffer);
 
-    planet->system =malloc(sizeof(systemBuffer));
+    planet->system =malloc(strlen(systemBuffer)+1);
     strcpy(planet->system, systemBuffer);
 
     planet->year = year;
 
-    planet->facility = malloc(sizeof(facilityBuffer));
+    planet->facility = malloc(strlen(facilityBuffer)+1);
     strcpy(planet->facility, facilityBuffer);
 
     planet->radius = radius;
 
-    planet->method = malloc(sizeof(methodBuffer));
+    planet->method = malloc(strlen(methodBuffer)+1);
     strcpy(planet->method, methodBuffer);
 
     planet->mass = mass;
@@ -97,7 +101,7 @@ const char* exoplanet_toString(const Exoplanet *planet) {
         planet->temperature,
         planet->habitability
     );
-    printf("%s",toStringBuffer); //! remove - this is for troubleshooting / testing
+    //printf("%s",toStringBuffer); //! remove - this is for troubleshooting / testing
     return toStringBuffer;
 }
 
