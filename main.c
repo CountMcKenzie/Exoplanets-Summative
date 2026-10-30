@@ -40,7 +40,6 @@ History     : 14/10/2026 - v1.00 Initial prototype
 #define EARTH_ESCAPE_VELOCITY (11186)       // Earth escape velocity in m/s
 #define EARTH_TEMPERATURE     (288)         // Earth surface temp. in K
 #define G_CONST               (6.674E-11)   // Gravitational constant
-#define M_PI                  (3.1415926)   // FIXED: PI was not defined, but used later
 
 double computeHabitability(const Exoplanet *planet);
 

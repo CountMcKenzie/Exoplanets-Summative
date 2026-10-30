@@ -83,14 +83,19 @@ Exoplanet *exoplanet_parse(const char *str) {
 }
 
 
-void exoplanet_free(Exoplanet *planet) {
-    free(planet);
-}
-
+   void exoplanet_free(Exoplanet *planet) {
+        if (planet == NULL) return;
+        free(planet->name);
+        free(planet->system);
+        free(planet->facility);
+        free(planet->method);
+        free(planet);
+    }
 
 const char* exoplanet_toString(const Exoplanet *planet) {
     static char toStringBuffer[450];
-    snprintf(toStringBuffer, sizeof(toStringBuffer), "\"%s\", \"%s\", \"%s\", %d, \"%s\", %lf, %lf, %d, %lf", 
+    // formatted floats to appropriate decimal places per spec provided in exoplanet.txt after unit testing
+    snprintf(toStringBuffer, sizeof(toStringBuffer), "\"%s\", \"%s\", \"%s\", %d, \"%s\", %.3lf, %.3lf, %d, %.4lf", 
         planet->name,
         planet->system,
         planet->method,

@@ -17,6 +17,7 @@ History     : 14/10/2026 - v1.00 Initial prototype
 #include <stdbool.h> // included boolean header as boolean logic used within this file.
 
 #include "List.h"
+#define BUFFER_SIZE 1024
 
 typedef struct LinkStruct
 {
@@ -85,7 +86,6 @@ void list_print(const List *list, FILE *fd)
 
 List *list_load(FILE *fd)
 {
-   const int BUFFER_SIZE = 1024;
 
    char buffer[BUFFER_SIZE];
 

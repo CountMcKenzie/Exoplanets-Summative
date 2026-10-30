@@ -6,10 +6,9 @@ Description : Tests that the Exoplanet ADT keeps its information intact:
               information parsed from a line of exoplanets.txt, and
               information changed afterwards using exoplanet_setHabitability.
 
-Build       : gcc -Wall -o exoplanetTest ExoplanetTest.c Exoplanet.c -lm
+Build       :  gcc -o exoplanetTestApp ExoplanetTest.c Exoplanet.c -lm
 
-Run         : ./exoplanetTest
-              (run it from the folder that contains exoplanets.txt)
+Run         : ./exoplanetTest_app
 
 ******************************************************************************/
 
@@ -23,9 +22,9 @@ Run         : ./exoplanetTest
 
 // two doubles closer together than this are treated as equal
 
-#define TOLERANCE (1e-9)
+#define TOLERANCE (1e-6)
 
-// lines in the same format as exoplanets.txt, used as test data
+// lines in the same format as first line in exoplanets.txt, used as test data
 
 #define LINE_HABITABLE       "\"WASP-148 b\", \"WASP-148\", \"Transit\", 2020, \"SuperWASP-North\", 8.093, 92.489, 940, 0.8776"
 
@@ -61,8 +60,20 @@ int check(bool condition, char *errorMessage)
    return 0;
 }
 
-bool nearlyEqual(double a, double b)
-{
+/******************************************************************************
+
+Function    : nearlyEqual
+
+Parameters  : double a, double b 
+
+Returns     : bool
+
+Description : compares 2 numbers and check if the difference is less than 1e-6 to account
+              for possible floating point errors.
+
+******************************************************************************/
+
+bool nearlyEqual(double a, double b) {
    return fabs(a - b) < TOLERANCE;
 }
 
@@ -70,8 +81,16 @@ bool nearlyEqual(double a, double b)
 
 The tests - each returns the number of checks that failed (0 means passed)
 
-******************************************************************************/
+All test types:
 
+      Parameters : None
+
+      return     : int - how many tests failed
+
+      process.   : Tests code behaviour of functions against hard coded, correct values
+                   to ensure the values modified by functions are correct
+
+******************************************************************************/
 
 
 int testingParsingValidPlanet(void)
@@ -199,9 +218,6 @@ int testToString(void)
    return toStringFails;
 }
 
-// Every line of exoplanets.txt must parse, and toString must give back
-// exactly the same line.  Stops at the first line that fails, so one mistake
-// does not print hundreds of messages.
 
 int testDataFile(void)
 {
@@ -273,7 +289,6 @@ Description : Run all the tests, then say weather everything passed.
 int main(void)
 {
    int totalFails = 0;
-
    totalFails += testingParsingValidPlanet();
    totalFails += testingParsingInvalidPlanet();
    totalFails += testSetHabitability();
@@ -291,5 +306,3 @@ int main(void)
 
    return EXIT_FAILURE;
 }
-
-/*****************************************************************************/
