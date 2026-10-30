@@ -61,9 +61,13 @@ int main(void)
                  i != list_end(planets);
                  i  = iterator_next(i))
    {
+
+      // FIXED: Correct method for updating habitability.
       Exoplanet *planet = iterator_get(i);
 
-      exoplanet_setHabitability(planet computeHabitability(planet));
+      double computedHabitability = computeHabitability(planet);
+
+      exoplanet_setHabitability(planet, computedHabitability);
    }
 
    // sort exoplanets according to habitability
@@ -130,7 +134,8 @@ Notes       : More verbose than strictly necessary in order to remain
 
 double BCSI(double x, double x0, double w)
 {
-   return pow(1 - abs(x - x0)/(x + x0), w);
+   return pow(1 - fabs(x - x0)/(x + x0), w); // FIXED: using fabs instead of abs, 
+                                             //        abs truncates float values
 }
 
 double computeHabitability(const Exoplanet *planet)

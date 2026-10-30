@@ -14,6 +14,7 @@ History     : 14/10/2026 - v1.00 Initial prototype
 ******************************************************************************/
 
 #include <stdlib.h>
+#include <stdbool.h> // included boolean header as boolean logic used within this file.
 
 #include "List.h"
 
